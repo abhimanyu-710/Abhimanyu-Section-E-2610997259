@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Course Registration</title>
+</head>
+<body>
+
+    <h2>Online Course Registration Form</h2>
+
+    <form action="/submit_registration" target="_self">
+        
+        <div>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="emailAddress">Email Address:</label>
+            <input type="email" id="emailAddress" name="emailAddress" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="genderMale" name="gender" value="Male">
+            <label for="genderMale">Male</label>
+
+            <input type="radio" id="genderFemale" name="gender" value="Female">
+            <label for="genderFemale">Female</label>
+
+            <input type="radio" id="genderOther" name="gender" value="Other">
+            <label for="genderOther">Other</label>
+        </div>
+        <br>
+
+        <div>
+            <label>Skills:</label>
+            <input type="checkbox" id="skillHTML" name="skills" value="HTML">
+            <label for="skillHTML">HTML</label>
+
+            <input type="checkbox" id="skillCSS" name="skills" value="CSS">
+            <label for="skillCSS">CSS</label>
+
+            <input type="checkbox" id="skillJS" name="skills" value="JavaScript">
+            <label for="skillJS">JavaScript</label>
+
+            <input type="checkbox" id="skillPython" name="skills" value="Python">
+            <label for="skillPython">Python</label>
+        </div>
+        <br>
+
+        <div>
+            <button type="submit">Register</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
