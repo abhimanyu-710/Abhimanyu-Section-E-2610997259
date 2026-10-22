@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Haven - Book Registration & Order Form</title>
+
+ 
+</head>
+
+<body>
+
+    <h1> Readers' Haven</h1>
+
+    <form action="#" method="post" target="_blank"
+          enctype="multipart/form-data">
+
+        <h2>Book Registration & Order Form</h2>
+        <p>Please fill in your details to register and order books.</p>
+
+        <input type="hidden" name="orderType"
+               value="Readers Haven Book Order">
+
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="name">Customer Name:</label>
+            <input type="text" id="name" name="customerName"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email address" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile"
+                   placeholder="Enter your mobile number"
+                   required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"
+                   min="1" max="120" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Create a password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Book Preferences</legend>
+
+            <label for="category">Favorite Book Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Select Category --</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Children's Books">Children's Books</option>
+            </select>
+
+            <label for="book">Book Title:</label>
+            <input type="text" id="book" name="bookTitle"
+                   placeholder="Enter book title" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity"
+                   min="1" value="1" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery Information</legend>
+
+            <label for="date">Delivery Date:</label>
+            <input type="date" id="date" name="deliveryDate"
+                   required>
+
+            <label for="time">Preferred Delivery Time:</label>
+            <input type="time" id="time" name="deliveryTime"
+                   required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4"
+                      placeholder="Enter house number, street, city, PIN code"
+                      required></textarea>
+
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" name="instructions"
+                      rows="3"
+                      placeholder="Any special delivery instructions?"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Payment Method</legend>
+
+            <input class="option" type="radio" id="cod"
+                   name="payment" value="Cash on Delivery" required>
+            <label class="option-label" for="cod">
+                Cash on Delivery
+            </label>
+
+            <input class="option" type="radio" id="online"
+                   name="payment" value="Online Payment">
+            <label class="option-label" for="online">
+                Online Payment
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Services</legend>
+
+            <input class="option" type="checkbox" id="gift"
+                   name="services[]" value="Gift Wrapping">
+            <label class="option-label" for="gift">
+                Gift Wrapping
+            </label>
+
+            <input class="option" type="checkbox" id="bookmark"
+                   name="services[]" value="Bookmark">
+            <label class="option-label" for="bookmark">
+                Bookmark
+            </label>
+
+            <input class="option" type="checkbox" id="express"
+                   name="services[]" value="Express Delivery">
+            <label class="option-label" for="express">
+                Express Delivery
+            </label>
+
+            <input class="option" type="checkbox" id="card"
+                   name="services[]" value="Greeting Card">
+            <label class="option-label" for="card">
+                Greeting Card
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reference Upload (Optional)</legend>
+
+            <label for="file">Upload Reference Image/Document:</label>
+            <input type="file" id="file" name="referenceFile"
+                   accept="image/*,.pdf,.doc,.docx">
+        </fieldset>
+
+        <button type="submit" class="submit">
+            Submit Order
+        </button>
+
+        <button type="reset" class="reset">
+            Reset Form
+        </button>
+
+    </form>
+
+</body>
+</html>
